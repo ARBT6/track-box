@@ -49,6 +49,55 @@ main {
     color: #444444;
 }
 
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    width: 280px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: rgb(241, 113, 67);
+}
+
+.search-box button {
+    padding: 8px 16px;
+    background-color: rgb(241, 113, 67);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.search-box button:hover {
+    background-color: rgb(210, 90, 45);
+}
+
+.search-status {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin: 24px 0 14px;
+    font-weight: normal;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
 .track-list {
     display: flex;
     flex-wrap: wrap;

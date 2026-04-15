@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="TrackBox — escucha tracks de Zenith Bikini, Patrick Jordan Patrikios y más artistas independientes">
+        content="TrackBox — escucha tracks de artistas independientes y busca música gratis">
     <title>TrackBox</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,6 +22,15 @@
     <main>
         <p class="subtitle">Artistas independientes — elige un track y dale play</p>
 
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar canción o artista..." />
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <section id="search-results" class="track-list" aria-label="Resultados de búsqueda" style="display:none"></section>
+        <p id="search-status" class="search-status"></p>
+
+        <h2 class="section-title">Destacados</h2>
         <section class="track-list" aria-label="Tracks disponibles">
 
             <article class="track-card">
@@ -64,9 +73,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 TrackBox</p>
+        <p>&copy; 2026 TrackBox — previews de 30s via iTunes</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
